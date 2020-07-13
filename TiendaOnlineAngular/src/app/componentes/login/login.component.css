@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:600);
+
+/*Centrar el login vertical y horizontalmente*/
+.div-html{
+  display: table;
+  margin: auto;
+  height: 100vh;
+}
+
+.div-body{
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+
+.error{
+    color: red;
+}
+
+.image-login{
+  background-image: url("../../assets/login-fondo.jpg");
+}
+
