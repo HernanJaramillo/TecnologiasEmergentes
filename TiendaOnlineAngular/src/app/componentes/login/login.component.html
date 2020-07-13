@@ -1,0 +1,21 @@
+
+<div class="div-html image-login">
+  <div class="div-body">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h4 class="text-center">Inicia Sesion</h4>
+      <form>
+        <div class="form-group">
+          <label for="email-input">Correo electronico</label>
+          
+          <input type="email" class="form-control" ngModel name="email" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" #usuario />
+        </div>
+        <div class="form-group">
+          <label for="password-input">Contrasena</label>
+          <input type="password" class="form-control" #contrasena required>
+        </div>
+        <label class="error" *ngIf="errorLogin">Usuario/Contrasena no validos</label>
+          <button class="btn btn-success center-block" type="button" (click)="iniciarSesion(usuario.value, contrasena.value)">Ingresar</button>
+      </form>
+    </div>
+  </div>
+</div>
